@@ -9,7 +9,7 @@ def main():
             1398: 5,
             1397: 4,
     }
-    csvHeader = [["Vorudi","Class Variance" ,"Class Average", "First Student", "Second Student", "Third Student", "Failed"]]
+    csvHeader = [["Enterance","Class Variance" ,"Class Average", "First Student", "Second Student", "Third Student", "Failed"]]
     inputCount = 4
     studentData = {}
     for i in range(1, inputCount + 1):
@@ -23,7 +23,7 @@ def main():
         studentCount = int(input("Enter student count for the {}: ".format(inputTitle)))
 
         for p in range(1, studentCount + 1):
-            scores = [] # [ "13:3", [20, 3] ]
+            scores = []
             studentNumber = int(input("\tEnter student number #{}: ".format(p)))
             sex = input("\tEnter {}'s gender: ".format(studentNumber)) 
 
