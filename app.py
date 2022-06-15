@@ -31,7 +31,7 @@ def main():
                 factor = int(input("\t\tEnter subject #{}'s factor: ".format(z)))
                 score = float(input("\t\tEnter subject #{}'s score: ".format(z)))
                 scores.append(str(score) + ":" + str(factor)) 
-
+            average = calculateAverageOfStudent()
             studentData[inputTitle].append([studentNumber, sex, scores])
         clearScreen()
         print(studentData)
@@ -45,5 +45,16 @@ def clearScreen():
         system('cls')
     else:
         system('clear')
-        
+
+def calculateAverageOfStudent(scoresAndFactors):
+    scoreSum = 0
+    factorSum = 0
+    for scoreString in socresAndFactors:
+        scoreString = scoreStirng.split(":")
+        score = scoreString[0]
+        factor = scoreString[1]
+        scoreSum += score * factor
+        factorSum += factor
+    return scoreSum / factorSum 
+
 if __name__ == '__main__': main()
