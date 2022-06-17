@@ -9,7 +9,7 @@ def main():
             1398: 5,
             1397: 4,
     }
-    csvHeader = [["Enterance","Class Variance" ,"Class Average", "First Student", "Second Student", "Third Student", "Failed"]]
+    csvHeader = [["Entrance","Class Variance" ,"Class Average", "First Student", "Second Student", "Third Student", "Failed"]]
     inputCount = 4
     studentData = {}
     for i in range(1, inputCount + 1):
